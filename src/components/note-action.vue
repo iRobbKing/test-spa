@@ -1,13 +1,15 @@
 <template>
-$END$
+  <img>
 </template>
 
-<script>
-export default {
-name: "note-action"
-}
+<script setup>
+
 </script>
 
 <style scoped>
-
+img {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
 </style>

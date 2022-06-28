@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <note-editor/>
 </template>
+
+<script setup>
+import NoteEditor from '@/components/note-editor'
+</script>

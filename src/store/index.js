@@ -1,14 +1,21 @@
-import { createStore } from 'vuex'
+import {createStore} from 'vuex'
 
 export default createStore({
-  state: {
+  state() {
+    return {
+      editedNote: null
+    }
   },
-  getters: {
-  },
+
+  getters: {},
+
   mutations: {
+    setEditedNote(state, note) {
+      state.editedNote = note
+    }
   },
-  actions: {
-  },
-  modules: {
-  }
+
+  actions: {},
+
+  modules: {},
 })
