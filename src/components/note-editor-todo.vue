@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="todo-wrapper" v-if="!editingTodo">
-      <label>
+      <span>
         <input type="checkbox" class="note-checked" :checked="checked" @change="$emit('checked', id, !checked)">
         <span>{{ task }}</span>
         <note-action src="pencil.png" @click="editingTodo = true"/>
         <note-action src="eraser.png" @click="deleteTodoPopupOpened = true"/>
-      </label>
+      </span>
     </div>
     <div class="todo-wrapper-editing" v-else>
       <input type="checkbox" disabled>
@@ -53,7 +53,7 @@ function deleteTodo() {
   font-size: 30px;
 }
 
-label * {
+span * {
   margin-left: 2vw;
 }
 

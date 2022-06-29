@@ -1,4 +1,4 @@
-export function useCommands() {
+export default function useCommands() {
   const inverseCommands = []
   const restoreCommands = []
   let pointer = 0

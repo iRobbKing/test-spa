@@ -44,7 +44,7 @@
 <script setup>
 import {ref} from 'vue'
 import {useRoute, useRouter} from 'vue-router'
-import {useCommands} from '@/composables/use-commands'
+import useCommands from '@/composables/use-commands'
 import NoteRestorePopup from '@/components/note-restore-popup'
 import NoteEditorTitle from '@/components/note-editor-title'
 import NoteEditorCreator from '@/components/note-editor-creator'
